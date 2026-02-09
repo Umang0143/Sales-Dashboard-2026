@@ -1,0 +1,268 @@
+const ordersData = [  
+  {
+    id: 1,
+    name: "Creative Cover",
+    price: 500,
+    quantity: 2,
+    status: "Confirmed",
+    date: "2026-02-13",
+    rating: 4.5,
+    details: "Good product",
+    img: "../src/assets/icons/id-1.svg"    
+  },
+  {
+    id: 2,
+    name: "Workflow Design",
+    price: 300,
+    quantity: 1,
+    status: "Confirmed",
+    date: "2026-02-13",
+    rating: 3.8,
+    details: "Average product",
+    img: "../src/assets/icons/id-2.svg"
+  },
+  {
+    id: 3,
+    name: "Branding Layouts",
+    price: 800,
+    quantity: 1,
+    status: "Confirmed",
+    date: "2026-02-13",
+    rating: 4.9,
+    details: "Premium product",
+    img: "../src/assets/icons/id-3.svg"
+  },
+  {
+    id: 4,
+    name: "Creative Cover",
+    price: 500,
+    quantity: 3,
+    status: "Confirmed",
+    date: "2026-02-13",
+    rating: 4.2,
+    details: "Nice product",
+    img: "../src/assets/icons/id-4.svg"
+  },
+  {
+    id: 1,
+    name: "Creative Cover",
+    price: 500,
+    quantity: 2,
+    status: "Confirmed",
+    date: "2026-02-12",
+    rating: 4.5,
+    details: "Good product",
+    img: "../src/assets/icons/id-1.svg"
+  },
+  {
+    id: 2,
+    name: "Workflow Design",
+    price: 300,
+    quantity: 1,
+    status: "Confirmed",
+    date: "2026-02-12",
+    rating: 3.8,
+    details: "Average product",
+    img: "../src/assets/icons/id-2.svg"
+  },
+  {
+    id: 3,
+    name: "Branding Layouts",
+    price: 800,
+    quantity: 1,
+    status: "Confirmed",
+    date: "2026-02-12",
+    rating: 4.9,
+    details: "Premium product",
+    img: "../src/assets/icons/id-3.svg"
+  },
+  {
+    id: 4,
+    name: "Creative Cover",
+    price: 500,
+    quantity: 3,
+    status: "Confirmed",
+    date: "2026-02-12",
+    rating: 4.2,
+    details: "Nice product",
+    img: "../src/assets/icons/id-4.svg"
+  },
+  {
+    id: 1,
+    name: "Creative Cover",
+    price: 500,
+    quantity: 2,
+    status: "Confirmed",
+    date: "2026-02-11",
+    rating: 4.5,
+    details: "Good product",
+    img: "../src/assets/icons/id-1.svg"
+  },
+  {
+    id: 2,
+    name: "Workflow Design",
+    price: 300,
+    quantity: 1,
+    status: "Confirmed",
+    date: "2026-02-11",
+    rating: 3.8,
+    details: "Average product",
+    img: "../src/assets/icons/id-2.svg"
+  },
+  {
+    id: 3,
+    name: "Branding Layouts",
+    price: 800,
+    quantity: 1,
+    status: "Confirmed",
+    date: "2026-02-11",
+    rating: 4.9,
+    details: "Premium product",
+    img: "../src/assets/icons/id-3.svg"
+  },
+  {
+    id: 4,
+    name: "Creative Cover",
+    price: 500,
+    quantity: 3,
+    status: "Confirmed",
+    date: "2026-02-11",
+    rating: 4.2,
+    details: "Nice product",
+    img: "../src/assets/icons/id-4.svg"
+  },
+  {
+    id: 1,
+    name: "Creative Cover",
+    price: 500,
+    quantity: 2,
+    status: "Confirmed",
+    date: "2026-02-10",
+    rating: 4.5,
+    details: "Good product",
+    img: "../src/assets/icons/id-1.svg"
+  },
+  {
+    id: 2,
+    name: "Workflow Design",
+    price: 300,
+    quantity: 1,
+    status: "Confirmed",
+    date: "2026-02-10",
+    rating: 3.8,
+    details: "Average product",
+    img: "../src/assets/icons/id-2.svg"
+  },
+  {
+    id: 3,
+    name: "Branding Layouts",
+    price: 800,
+    quantity: 1,
+    status: "Confirmed",
+    date: "2026-02-10",
+    rating: 4.9,
+    details: "Premium product",
+    img: "../src/assets/icons/id-3.svg"
+  },
+  {
+    id: 4,
+    name: "Creative Cover",
+    price: 500,
+    quantity: 3,
+    status: "Confirmed",
+    date: "2026-02-10",
+    rating: 4.2,
+    details: "Nice product",
+    img: "../src/assets/icons/id-4.svg"
+  },
+  {
+    id: 1,
+    name: "Creative Cover",
+    price: 500,
+    quantity: 2,
+    status: "Confirmed",
+    date: "2026-02-09",
+    rating: 4.5,
+    details: "Good product",
+    img: "../src/assets/icons/id-1.svg"
+  },
+  {
+    id: 2,
+    name: "Workflow Design",
+    price: 300,
+    quantity: 1,
+    status: "Confirmed",
+    date: "2026-02-09",
+    rating: 3.8,
+    details: "Average product",
+    img: "../src/assets/icons/id-2.svg"
+  },
+  {
+    id: 3,
+    name: "Branding Layouts",
+    price: 800,
+    quantity: 1,
+    status: "Confirmed",
+    date: "2026-02-09",
+    rating: 4.9,
+    details: "Premium product",
+    img: "../src/assets/icons/id-3.svg"
+  },
+  {
+    id: 4,
+    name: "Creative Cover",
+    price: 500,
+    quantity: 3,
+    status: "Confirmed",
+    date: "2026-02-09",
+    rating: 4.2,
+    details: "Nice product",
+    img: "../src/assets/icons/id-4.svg"
+  },
+  {
+    id: 1,
+    name: "Creative Cover",
+    price: 500,
+    quantity: 2,
+    status: "Confirmed",
+    date: "2026-02-08",
+    rating: 4.5,
+    details: "Good product",
+    img: "../src/assets/icons/id-1.svg"
+  },
+  {
+    id: 2,
+    name: "Workflow Design",
+    price: 300,
+    quantity: 1,
+    status: "Confirmed",
+    date: "2026-02-08",
+    rating: 3.8,
+    details: "Average product",
+    img: "../src/assets/icons/id-2.svg"
+  },
+  {
+    id: 3,
+    name: "Branding Layouts",
+    price: 800,
+    quantity: 1,
+    status: "Confirmed",
+    date: "2026-02-08",
+    rating: 4.9,
+    details: "Premium product",
+    img: "../src/assets/icons/id-3.svg"
+  },
+  {
+    id: 4,
+    name: "Creative Cover",
+    price: 500,
+    quantity: 3,
+    status: "Confirmed",
+    date: "2026-02-08",
+    rating: 4.2,
+    details: "Nice product",
+    img: "../src/assets/icons/id-4.svg"
+  },
+];
+
+export default ordersData;
