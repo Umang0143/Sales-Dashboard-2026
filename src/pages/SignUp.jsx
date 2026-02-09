@@ -71,7 +71,7 @@ const SignUp = () => {
             <div className="display-5 mb-md-5 mb-sm-3">
               <img
                 className="me-3"
-                src="../src\assets\logo\logo.svg"
+                src="src\assets\logo\logo.svg"
                 width="67"
                 height="70"
                 alt=""
