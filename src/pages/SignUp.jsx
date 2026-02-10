@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { useState } from "react";
+import logo from "../assets/logo/logo.svg";
 
 const schema = yup.object().shape({
   fullName: yup
@@ -71,10 +72,10 @@ const SignUp = () => {
             <div className="display-5 mb-md-5 mb-sm-3">
               <img
                 className="me-3"
-                src="src\assets\logo\logo.svg"
+                src={logo}
                 width="67"
                 height="70"
-                alt=""
+                alt="logo"
               />
               SelseInfo
             </div>

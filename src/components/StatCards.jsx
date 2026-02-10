@@ -1,7 +1,17 @@
-import { Card, Col, Button, } from "react-bootstrap";
+import { Card, Col, Button } from "react-bootstrap";
 import { useDashboard } from "../context/DashboardContext";
-import { ArrowRight, } from "react-bootstrap-icons";
+import { ArrowRight } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
+
+import revenueCard from "../assets/icons/revenueCard.svg";
+import orderCard from "../assets/icons/orderCard.svg";
+import audianceCard from "../assets/icons/audianceCard-1.svg";
+
+import moreIcon from "../assets/icons/more.svg";
+
+import badgeRevenue from "../assets/icons/Badge.svg";
+import badgeOrder from "../assets/icons/Badge-1.svg";
+import badgeAudience from "../assets/icons/Badge-2.svg";
 
 const StatCards = () => {
   const { data } = useDashboard();
@@ -16,19 +26,16 @@ const StatCards = () => {
         <Card className="h-100">
           <Card.Body>
             <Card.Title className="d-flex justify-content-between align-items-start">
-              <img
-                src="../src/assets/icons/revenueCard.svg"
-                alt="revenueCard-icon"
-              />
-              <img src="../src/assets/icons/more.svg" alt="more-icon"  className="mt-2"/>
+              <img src={revenueCard} alt="revenueCard-icon" />
+              <img src={moreIcon} alt="more-icon" className="mt-2" />
             </Card.Title>
-            <Card.Text className="fs-5 medium">
-              Total Revenue
-            </Card.Text>
+            <Card.Text className="fs-5 medium">Total Revenue</Card.Text>
             <p className="display-6 fw-bold">$ {revenue.toFixed(3)}</p>
             <div>
-              <img src="../src/assets/icons/Badge.svg" alt="" />
-              <span className="text-info ms-2 fs-5 medium">activity from July 1st to July 31th </span>
+              <img src={badgeRevenue} alt=" badgeRevenue" />
+              <span className="text-info ms-2 fs-5 medium">
+                activity from July 1st to July 31th{" "}
+              </span>
             </div>
           </Card.Body>
 
@@ -47,19 +54,16 @@ const StatCards = () => {
         <Card className="h-100">
           <Card.Body>
             <Card.Title className="d-flex justify-content-between align-items-start">
-              <img
-                src="../src/assets/icons/orderCard.svg"
-                alt="revenueCard-icon"
-              />
-              <img src="../src/assets/icons/more.svg" alt="more-icon"  className="mt-2"/>
+              <img src={orderCard} alt="orderCard-icon" />
+              <img src={moreIcon} alt="more-icon" className="mt-2" />
             </Card.Title>
-            <Card.Text className="fs-5 medium">
-              Product Orders
-            </Card.Text>
+            <Card.Text className="fs-5 medium">Product Orders</Card.Text>
             <p className="display-6 fw-bold">{orders.toFixed(3)}</p>
             <div>
-              <img src="../src/assets/icons/Badge-1.svg" alt="" />
-              <span className="text-info ms-2 fs-5 medium">activity from July 1st to July 31th </span>
+              <img src={badgeOrder} alt="badgeOrder" />
+              <span className="text-info ms-2 fs-5 medium">
+                activity from July 1st to July 31th{" "}
+              </span>
             </div>
           </Card.Body>
 
@@ -78,19 +82,16 @@ const StatCards = () => {
         <Card className="h-100">
           <Card.Body>
             <Card.Title className="d-flex justify-content-between align-items-start">
-              <img
-                src="../src/assets/icons/audianceCard-1.svg"
-                alt="revenueCard-icon"
-              />
-              <img src="../src/assets/icons/more.svg" alt="more-icon"  className="mt-2"/>
+              <img src={audianceCard} alt="audianceCard-icon" />
+              <img src={moreIcon} alt="more-icon" className="mt-2" />
             </Card.Title>
-            <Card.Text className="fs-5 medium">
-              Total Audience
-            </Card.Text>
+            <Card.Text className="fs-5 medium">Total Audience</Card.Text>
             <p className="display-6 fw-bold">{audience.toFixed(3)}</p>
             <div>
-              <img src="../src/assets/icons/Badge-2.svg" alt="" />
-              <span className="text-info ms-2 fs-5 medium">activity from July 1st to July 31th </span>
+              <img src={badgeAudience} alt="badgeAudience" />
+              <span className="text-info ms-2 fs-5 medium">
+                activity from July 1st to July 31th{" "}
+              </span>
             </div>
           </Card.Body>
 
@@ -104,7 +105,6 @@ const StatCards = () => {
           </Card.Footer>
         </Card>
       </Col>
-      
     </>
   );
 };

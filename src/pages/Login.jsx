@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { useState } from "react";
+import logo from "../assets/logo/logo.svg";
 
 const schema = yup.object().shape({
   email: yup
@@ -70,10 +71,10 @@ const Login = () => {
             <div className="display-5 mb-md-5 mb-sm-3">
               <img
                 className="me-3"
-                src="src\assets\logo\logo.svg"
+                src={logo}
                 width="67"
                 height="70"
-                alt=""
+                alt="logo"
               />
               SelseInfo
             </div>
@@ -105,10 +106,7 @@ const Login = () => {
                 <div className="d-flex justify-content-between align-items-center">
                   <Form.Label className="mb-0">Password</Form.Label>
 
-                  <Link
-                    to="#"
-                    className="text-decoration-none small fw-medium"
-                  >
+                  <Link to="#" className="text-decoration-none small fw-medium">
                     Forgot password?
                   </Link>
                 </div>

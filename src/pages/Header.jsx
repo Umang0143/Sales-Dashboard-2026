@@ -1,5 +1,6 @@
 import { Card } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
+import exclamationIcon from "../assets/icons/Exclamation.svg";
 
 const Header = () => {
   return (
@@ -8,10 +9,7 @@ const Header = () => {
         <Card.Body className="d-flex flex-wrap gap-3 justify-content-between align-items-center">
           <div className="d-flex">
             <div className="me-2">
-              <img
-                src="../src/assets/icons/Exclamation.svg"
-                alt="Exclamation icon"
-              />
+              <img src={exclamationIcon} alt="Exclamation icon" />
             </div>
             <div>
               <Card.Title className="text-dark">

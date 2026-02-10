@@ -2,6 +2,18 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Badge, Col, Image, Row } from "react-bootstrap";
 import { ArrowRight, ChevronDown, List } from "react-bootstrap-icons";
+import logo from "../assets/logo/logo.svg";
+import overviewIcon from "../assets/icons/overview.svg";
+import analyticsIcon from "../assets/icons/analytics.svg";
+import statusUpIcon from "../assets/icons/status-up.svg";
+import shopIcon from "../assets/icons/shop.svg";
+import yellowIcon from "../assets/icons/yellow.svg";
+import greenIcon from "../assets/icons/green.svg";
+import redIcon from "../assets/icons/red.svg";
+import figmaIcon from "../assets/icons/figma.svg";
+import settingIcon from "../assets/icons/setting.svg";
+import helpIcon from "../assets/icons/help.svg";
+import profileIcon from "../assets/icons/profile.svg";
 
 const Sidebar = () => {
   const [openMenu, setOpenMenu] = useState("0");
@@ -45,10 +57,10 @@ const Sidebar = () => {
             <header className="d-flex justify-content-between align-items-center p-3 mb-3">
               <div>
                 <img
-                  src="../src/assets/logo/logo.svg"
+                  src={logo}
                   width="67"
                   height="70"
-                  className="me-2"
+                  className="me-2 img-fluid"
                   alt="logo"
                 />
               </div>
@@ -63,10 +75,7 @@ const Sidebar = () => {
                   to="overview"
                   className="d-block mb-2 text-info text-decoration-none"
                 >
-                  <img
-                    src="../src/assets/icons/overview.svg"
-                    className="me-3"
-                  />
+                  <img src={overviewIcon} className="me-3" />
                   Dashboard Overview
                 </Link>
 
@@ -74,10 +83,7 @@ const Sidebar = () => {
                   to="comingsoon"
                   className="d-block mb-2 text-info text-decoration-none"
                 >
-                  <img
-                    src="../src/assets/icons/analytics.svg"
-                    className="me-3"
-                  />
+                  <img src={analyticsIcon} className="me-3" />
                   Advanced Analytics
                 </Link>
 
@@ -88,10 +94,7 @@ const Sidebar = () => {
                          btn btn-transparent text-info px-0 mb-2"
                 >
                   <span>
-                    <img
-                      src="../src/assets/icons/status-up.svg"
-                      className="me-3"
-                    />
+                    <img src={statusUpIcon} className="me-3" />
                     Statistics
                   </span>
 
@@ -134,7 +137,7 @@ const Sidebar = () => {
                   className="d-flex justify-content-between align-items-center text-info text-decoration-none pe-3"
                 >
                   <span>
-                    <img src="../src/assets/icons/shop.svg" className="me-3" />
+                    <img src={shopIcon} className="me-3" />
                     Storefront
                   </span>
                   <Badge bg="success">New</Badge>
@@ -151,10 +154,7 @@ const Sidebar = () => {
                   className="d-block mb-2 text-info text-decoration-none p-3 d-flex justify-content-between align-items-center"
                 >
                   <span>
-                    <img
-                      src="../src/assets/icons/yellow.svg"
-                      className="me-3"
-                    />
+                    <img src={yellowIcon} className="me-3" />
                     Mailchimp
                   </span>
                   <ArrowRight />
@@ -165,7 +165,7 @@ const Sidebar = () => {
                   className="d-block mb-2 text-info text-decoration-none p-3 d-flex justify-content-between align-items-center"
                 >
                   <span>
-                    <img src="../src/assets/icons/green.svg" className="me-3" />
+                    <img src={greenIcon} className="me-3" />
                     Evernote
                   </span>
                   <ArrowRight />
@@ -176,7 +176,7 @@ const Sidebar = () => {
                   className="d-block text-info text-decoration-none p-3 d-flex justify-content-between align-items-center"
                 >
                   <span>
-                    <img src="../src/assets/icons/red.svg" className="me-3" />
+                    <img src={redIcon} className="me-3" />
                     Slack
                   </span>
                   <ArrowRight />
@@ -187,7 +187,7 @@ const Sidebar = () => {
                   className="d-block text-info text-decoration-none p-3 d-flex justify-content-between align-items-center"
                 >
                   <span>
-                    <img src="../src/assets/icons/figma.svg" className="me-3" />
+                    <img src={figmaIcon} className="me-3" />
                     Figma
                   </span>
                   <ArrowRight />
@@ -203,7 +203,7 @@ const Sidebar = () => {
                   to="#"
                   className="d-block mb-2 text-info text-decoration-none"
                 >
-                  <img src="../src/assets/icons/setting.svg" className="me-3" />
+                  <img src={settingIcon} className="me-3" />
                   Settings
                 </Link>
 
@@ -211,7 +211,7 @@ const Sidebar = () => {
                   to="#"
                   className="d-block mb-2 text-info text-decoration-none"
                 >
-                  <img src="../src/assets/icons/help.svg" className="me-3" />
+                  <img src={helpIcon} className="me-3" />
                   Help Center
                 </Link>
 
@@ -219,7 +219,7 @@ const Sidebar = () => {
                   to="comingSoon"
                   className="d-block text-info text-decoration-none"
                 >
-                  <img src="../src/assets/icons/profile.svg" className="me-3" />
+                  <img src={profileIcon} className="me-3" />
                   Profile
                 </Link>
               </div>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Navbar, Container, Offcanvas } from "react-bootstrap";
 import Sidebar from "./Sidebar";
+import logo from "../assets/logo/logo.svg";
 
 const ResponsiveSidebar = () => {
   const [show, setShow] = useState(false);
@@ -11,7 +12,7 @@ const ResponsiveSidebar = () => {
         <Container fluid>
           <Navbar.Brand className="text-white">
             <img
-              src="../src/assets/logo/logo.svg"
+              src={logo}
               width="40"
               height="40"
               className="me-2 img-fluid"
